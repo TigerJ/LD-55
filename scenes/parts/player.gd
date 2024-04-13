@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var speed:float = 100
+var speed:float = 200
 
 var direction:Vector2 = Vector2.ZERO
 @onready var animated_sprite_2d = $AnimatedSprite2D
