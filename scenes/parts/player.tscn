@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bx3pdkwxc65a2"]
+[gd_scene load_steps=8 format=3 uid="uid://bx3pdkwxc65a2"]
 
 [ext_resource type="Script" path="res://scenes/parts/player.gd" id="1_oiiq0"]
 [ext_resource type="Texture2D" uid="uid://bo5o6wqv3vaay" path="res://sprites/player1.png" id="1_qg331"]
@@ -33,6 +33,9 @@ animations = [{
 "speed": 13.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_iyire"]
+radius = 24.0
+
 [node name="Player" type="CharacterBody2D"]
 z_index = 100
 script = ExtResource("1_oiiq0")
@@ -45,3 +48,11 @@ shape = SubResource("RectangleShape2D_8hhcr")
 sprite_frames = SubResource("SpriteFrames_cmhnx")
 animation = &"walk"
 autoplay = "default"
+
+[node name="InteractArea2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractArea2D"]
+position = Vector2(0, 8)
+shape = SubResource("CircleShape2D_iyire")

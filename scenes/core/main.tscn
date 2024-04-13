@@ -13,6 +13,30 @@ script = ExtResource("1_ql2up")
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
 
-[node name="LevelPiece1" parent="." instance=ExtResource("2_e8ow7")]
-
 [node name="Ui" parent="." instance=ExtResource("4_hnlqb")]
+
+[node name="LevelPieceCenter" parent="." instance=ExtResource("2_e8ow7")]
+
+[node name="LevelPieceLeft" parent="." instance=ExtResource("2_e8ow7")]
+position = Vector2(-640, 0)
+
+[node name="LevelPieceTopLeft" parent="." instance=ExtResource("2_e8ow7")]
+position = Vector2(-640, -384)
+
+[node name="LevelPieceBottomLeft" parent="." instance=ExtResource("2_e8ow7")]
+position = Vector2(-640, 384)
+
+[node name="LevelPieceTop" parent="." instance=ExtResource("2_e8ow7")]
+position = Vector2(0, -384)
+
+[node name="LevelPieceTopRight" parent="." instance=ExtResource("2_e8ow7")]
+position = Vector2(640, -384)
+
+[node name="LevelPieceRight" parent="." instance=ExtResource("2_e8ow7")]
+position = Vector2(640, 0)
+
+[node name="LevelPieceBottom" parent="." instance=ExtResource("2_e8ow7")]
+position = Vector2(0, 384)
+
+[node name="LevelPieceBottomRight" parent="." instance=ExtResource("2_e8ow7")]
+position = Vector2(640, 384)

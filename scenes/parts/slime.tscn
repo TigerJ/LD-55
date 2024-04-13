@@ -39,7 +39,7 @@ script = ExtResource("1_lawya")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_j51ex")
 autoplay = "default"
-frame_progress = 0.620969
+frame_progress = 0.840015
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_2214m")
