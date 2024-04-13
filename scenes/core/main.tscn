@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://c88xl23lkvf6q"]
+
+[ext_resource type="PackedScene" uid="uid://bx3pdkwxc65a2" path="res://scenes/parts/player.tscn" id="1_i7g1l"]
+[ext_resource type="Script" path="res://scenes/core/main.gd" id="1_ql2up"]
+[ext_resource type="PackedScene" uid="uid://bflg20qn6y05e" path="res://scenes/parts/level_piece_1.tscn" id="2_e8ow7"]
+[ext_resource type="PackedScene" uid="uid://bm7glprt5erqn" path="res://scenes/parts/ui.tscn" id="4_hnlqb"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ql2up")
+
+[node name="Player" parent="." instance=ExtResource("1_i7g1l")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
+
+[node name="LevelPiece1" parent="." instance=ExtResource("2_e8ow7")]
+
+[node name="Ui" parent="." instance=ExtResource("4_hnlqb")]
